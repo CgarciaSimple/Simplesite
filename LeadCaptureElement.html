@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="DesignButton">Design Your Solar System</button>
+
+    <script src="https://leads.aurorasolar.com/lead-capture-sdk-v1.js" data-org-id="690f6461-5ab1-452f-9048-c69854aea4dc"></script>
+    <script>
+        window.AuroraLeadCaptureAsyncInit = () => {
+            const button = document.getElementById('DesignButton');
+            button.addEventListener('click', () => {
+                AuroraLeadCapture.open();
+            });
+        };
+    </script>
+</body>
+</html>
